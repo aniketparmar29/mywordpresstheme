@@ -208,12 +208,134 @@ body {
   transition: transform 0.3s ease;
   width: 200px !important;
 }
-
+.aboutgif{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+  border-radius: 15px !important;
+}
 .skilldiv figure:hover {
   transform: scale(1.05);
 }
 main {
   display: block;
+}
+/* Latest Post Section */
+.latest-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.latest-posts li {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.latest-posts li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.latest-posts li img {
+  width: 100% !important;
+  /* display: block; */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.sidediv{
+  display: flex !important;
+  flex-direction: column !important;
+  /* justify-content: center !important; */
+  align-items: center !important;
+}
+.latest-posts li h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.latest-posts li p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.latest-posts li a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.latest-posts li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Search Form Styles */
+.wp-block-search__inside-wrapper {
+  display: flex;
+}
+
+.wp-block-search__input {
+  width: calc(100% - 48px); /* Adjust input width */
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.wp-block-search__button {
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+
+.wp-block-search__button:hover {
+  background-color: #0056b3;
+}
+
+
+.wp-block-latest-posts__list,
+.wp-block-latest-comments {
+  list-style: none;
+  padding: 0;
+}
+
+.wp-block-latest-posts__post-title,
+.wp-block-latest-comments__comment-author {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.wp-block-latest-posts__post-title:hover,
+.wp-block-latest-comments__comment-author:hover {
+  text-decoration: underline;
+}
+
+/* .wp-block-latest-posts__list li,
+.wp-block-latest-comments__comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+} */
+.post-title{
+  text-align: center;
+}
+/* Responsive */
+@media screen and (max-width: 768px) {
+
+
+  .wp-block-search__inside-wrapper {
+      width: 100%;
+  }
+
+  .wp-block-search__input {
+      width: calc(100% - 50px); /* Adjust input width */
+  }
 }
 
 /**
@@ -266,7 +388,12 @@ abbr[title] {
   text-decoration: underline;
   text-decoration: underline dotted;
 }
-
+.postedtame{
+  text-align: right !important;
+}
+.postcontainer{
+  padding: 20px 40px;
+}
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
