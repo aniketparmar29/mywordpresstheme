@@ -198,12 +198,19 @@ body {
 }
 .skilldiv {
   margin: 1rem 10rem;
+  gap: 30px !important;
 }
 .skilldiv figure {
   padding: 40px;
-  background-color: #0693e3;
+  background-color: #62b7e7;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: transform 0.3s ease;
+  width: 200px !important;
+}
+
+.skilldiv figure:hover {
+  transform: scale(1.05);
 }
 main {
   display: block;
